@@ -1,0 +1,8 @@
+#!/bin/bash
+if [[ $1 == "de" ]];then
+	echo -n "$2" | base64 -d
+elif [[ -z "$1" ]];then
+	echo -e "To decode ./base64 en "encode_text"\nTo encode ./base64 "your_text""
+else
+	echo -n "$1" | base64
+fi
